@@ -1,18 +1,18 @@
 package com.lin;
 
-
-import com.myrule.MySelfRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
-
+/**
+ * @version 1.0
+ * @author： 林功鑫
+ * @date： 2021-04-13 16:46
+ */
 @SpringBootApplication
 @EnableEurekaClient
-@RibbonClient(name = "cloud-payment-service",configuration = MySelfRule.class)
-public class OrderMain80 {
+public class PaymentMain8002 {
     public static void main(String[] args) {
-        SpringApplication.run(OrderMain80.class, args);
+        SpringApplication.run(PaymentMain8002.class, args);
     }
 }

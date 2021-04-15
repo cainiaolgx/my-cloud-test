@@ -1,6 +1,5 @@
 server:
   port: 80
-
 eureka:
   client:
      #是否将自己注册到注册中心,集群必须设置为true配合ribbon
@@ -9,4 +8,7 @@ eureka:
     fetch-registry: true
     service-url:
         #,http://eureka7002.com:7002/eureka
-       defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7002.com:7002/eureka,http://eureka7001.com:7001/eureka
+spring:
+  application:
+    name: cloud-consumer-order
